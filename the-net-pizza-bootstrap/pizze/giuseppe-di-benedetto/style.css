@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Roboto&family=Titillium+Web&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+header h1 {
+    font-size: 6rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2.3rem;
+    color: #fa5454;
+}
+
+header{
+    background-image: url("pizza-zeb.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    color: #ffffff;
+    text-shadow: 0 0 4px black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.wiki{
+    display: flex;
+    justify-content: center;
+}
+
+.info-card{
+    width: 18rem;
+    margin: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.info-card:hover{
+    transform: scale(1.1);
+}
+
+.card-img-top{
+    border-radius: 8px;
+    max-height: 160.92px;
+}
+
+.card-title{
+    padding: 8px;
+}
+
+.card-text{
+    padding: 8px;
+}
+
+.btn{
+    margin: 8px; 
+}
+
+.text-center{
+    margin-top: 16px;
+}
+
+.ingredients-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.ingredients{
+    justify-content: center;
+}
+
+.row{
+    align-items: center;
+    justify-content: center;
+}
+
+.ingredients-body{
+    margin: 16px;
+    
+}
+
+.col-sm-4{
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 48px;
+    padding: 0px;
+}
+
+.card-img-ingredients{
+    border-radius: 8px;
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.recipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 60%;
+    margin: auto;
+    padding: 16px;
+}
+
+ol{
+    list-style: none;
+}
+
+ol li{
+    margin: 0px;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    margin: 0px;
+}
+
+.step-title{
+    color: #e94c4c;
+    text-align: center;
+    margin-left: 16px;
+}
+
+.step{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 470px;
+    margin-right: 48px;
+    font-size: large;
+    color: #000;
+}
+
+.step-img{
+    width: 470px;
+    height: 221px;
+    margin: auto;
+}
+
+#recipe-title{
+margin-right: 8px;
+}
