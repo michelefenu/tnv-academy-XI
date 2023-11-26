@@ -5,6 +5,8 @@ body {
     padding: 0;
     border: 0;
     font-family: 'Titillium Web', sans-serif;
+    color: #000;
+    background-color: #f5d99b;
 }
 
 h1,
@@ -17,10 +19,15 @@ h4 {
 header h1 {
     font-size: 6rem;
     margin: 0;
+    color: #ffde2f;
 }
 
 h2 {
     font-size: 3rem;
+}
+
+#subtitle{
+    color: #ffde2f;
 }
 
 h3{
@@ -35,16 +42,21 @@ header{
     height: 400px;
     display: flex;
     color: #ffffff;
-    text-shadow: 0 0 4px black;
+    text-shadow: 0 0 4px #000;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 48px;
 }
 
+main{
+    margin-bottom: 200px;
+}
+
 .wiki{
     display: flex;
     justify-content: center;
+    z-index: 4;
 }
 
 .info-card{
@@ -53,6 +65,7 @@ header{
     border: 1px solid black;
     border-radius: 10px;
     transition: transform 0.3s;
+    background-color: #f3cb76;
 }
 
 .info-card:hover{
@@ -74,6 +87,23 @@ header{
 
 .btn{
     margin: 8px; 
+}
+
+.btn-primary {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #d95252;
+    --bs-btn-border-color: #000;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #cf3535;
+    --bs-btn-hover-border-color: #000;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #cf3535;
+    --bs-btn-active-border-color: #000;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #fb6f6f;
+    --bs-btn-disabled-border-color: #000;
 }
 
 .text-center{
@@ -99,7 +129,6 @@ header{
 
 .ingredients-body{
     margin: 16px;
-    
 }
 
 .col-sm-4{
@@ -107,6 +136,7 @@ header{
     border-radius: 8px;
     margin: 48px;
     padding: 0px;
+    background-color: #f3cb76;
 }
 
 .card-img-ingredients{
@@ -121,9 +151,11 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 60%;
-    margin: auto;
+    max-width: 50%;
+    margin:auto;
     padding: 16px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
 }
 
 ol{
@@ -153,18 +185,88 @@ ul li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 470px;
+    width: 540px;
     margin-right: 48px;
     font-size: large;
-    color: #000;
 }
 
 .step-img{
-    width: 470px;
-    height: 221px;
-    margin: auto;
+    width: 530px;
+    height: 240px;
+    margin: 0;
+    padding-bottom: 8px;
 }
 
 #recipe-title{
 margin-right: 8px;
+}
+
+.nutritional-values{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nutritional-values-conteiner{
+    margin-right: 24px;
+}
+
+.values-name{
+    width: 700px;
+    margin-right: 24px;
+    border: 1px solid #616161;
+    padding: 8px;
+    padding-left: 64px;
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+    color: #000;
+}
+
+.values{
+    padding-right: 64px;
+}
+
+footer {
+    margin-top: 64px;
+    background-color: #8C2703;
+    color: white;
+    box-shadow: 0 -3px 5px lightgray;
+}
+
+footer section {
+    padding: 32px;
+}
+
+table {
+    border: 1px solid lightgray;
+    width: 300px;
+}
+
+table td, table th {
+    padding: 4px;
+    text-align: left;
+}
+
+table th {
+    background-color: white;
+    color: #8C2703;
+}
+
+.satisfaction{
+    border: 1px solid #000;
+    width: 449px;
+}
+
+.satisfied-zeb{
+    width: 447px;
+}
+
+.footer-second-title{
+    margin-bottom: 17px;
+}
+
+.footer-third-element{
+    margin-bottom: 234px;
 }
