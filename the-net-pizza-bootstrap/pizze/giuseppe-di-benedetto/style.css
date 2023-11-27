@@ -35,12 +35,6 @@ h3{
     color: #fa5454;
 }
 
-a{
-    color: inherit;
-    direction: none;
-    text-decoration: none;
-}
-
 header{
     background-image: url("pizza-zeb.jpg");
     background-size: cover;
@@ -308,8 +302,17 @@ table th {
 
 .advertising-title{
     text-align: center;
+    border-bottom: 1px solid #000;
+    padding-bottom: 8px;
+    padding-top: 8px;
 }
 
 .advertising-text{
     text-align: center;
+}
+
+.advertising-link{
+    color: inherit;
+    direction: none;
+    text-decoration: none;
 }
