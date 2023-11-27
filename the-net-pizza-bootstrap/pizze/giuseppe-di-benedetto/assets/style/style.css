@@ -36,7 +36,7 @@ h3{
 }
 
 header{
-    background-image: url("pizza-zeb.jpg");
+    background-image: url("../images/pizza-zeb.jpg");
     background-size: cover;
     background-position: center;
     height: 400px;
