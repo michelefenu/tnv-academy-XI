@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Roboto&family=Titillium+Web&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+h2,
+h3,
+h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #730217;
+}
+
+h2 {
+    font-size: 4rem;
+    
+}
+
+header {
+   background-image: url("../images/Screen.jpg");
+    background-size: cover;
+    background-position:right;
+    text-align: left;
+    color:aliceblue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    text-shadow: 0 0 4px black;
+   
+}
+
+header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 40px;
+    margin-left: 15px;
+    font-size: 14rem;
+    line-height: 1;
+    color: beige;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 64px;
+}
+
+
+
+section p{
+    font-family: 'Pacifico',cursive;
+    text-align:center;
+    font-size: 3rem;
+    color: #730217;
+}
+
+
+
+.card-text{
+    font-family: 'Pacifico',cursive;
+    text-align:center;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0 0 4px black;
+}
+
+.section-title {
+    color: #0371A6;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.separator {
+    width: 100px;
+    height: 4px;
+    background-color: #c1922e;
+    margin: 0 auto;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: scale(1.1);
+  }
+
+  #wiki-link {
+    text-decoration: none; 
+    color: #730217;
+  }
+
+.form{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+footer {
+    margin-top: 64px;
+    background-color: #8C2703;
+    color: white;
+    box-shadow: 0 -3px 5px lightgray;
+}
+
+footer section {
+    padding: 32px;
+}
