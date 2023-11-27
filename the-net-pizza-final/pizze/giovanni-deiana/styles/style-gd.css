@@ -61,6 +61,13 @@ section#ingredients ul li {
     box-shadow: 1px 1px 2px lightgray;
 }
 
+.carousel-inner {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px lightgray;
+  }
+
+
 
 .container {
     max-width: 900px;
