@@ -9,6 +9,10 @@ body {
     background-color: #f5d99b;
 }
 
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
 h1,
 h2,
 h3,
@@ -26,7 +30,8 @@ h2 {
     font-size: 3rem;
 }
 
-#subtitle{
+#subtitle , #title{
+    text-shadow: 0 0 4px #000;
     color: #ffde2f;
 }
 
@@ -40,17 +45,19 @@ header{
     background-size: cover;
     background-position: center;
     height: 400px;
-    display: flex;
-    color: #ffffff;
-    text-shadow: 0 0 4px #000;
+    display: flex; 
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 48px;
+    margin-top: 48px;   
 }
 
 main{
     margin-bottom: 200px;
+}
+
+.info {
+    justify-content: space-around !important;
 }
 
 .wiki{
@@ -131,7 +138,7 @@ main{
     margin: 16px;
 }
 
-.col-sm-4{
+.card-container{
     border: 1px solid black;
     border-radius: 8px;
     margin: 48px;
@@ -151,7 +158,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 50%;
+    max-width: 816px;
     margin:auto;
     padding: 16px;
     border-left: 1px solid #000;
@@ -160,6 +167,7 @@ main{
 
 ol{
     list-style: none;
+    padding: 0;
 }
 
 ol li{
@@ -168,6 +176,7 @@ ol li{
 
 ul{
     list-style: none;
+    padding: 0;
 }
 
 ul li{
@@ -185,47 +194,39 @@ ul li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 540px;
-    margin-right: 48px;
+    max-width: 572px;
+    width: 100%;
     font-size: large;
 }
 
 .step-img{
-    width: 530px;
+    width: 100%;
     height: 240px;
-    margin: 0;
+    margin: 16px;
     padding-bottom: 8px;
 }
 
 #recipe-title{
-margin-right: 8px;
+margin-left: 16px;
 }
 
-.nutritional-values{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
+.table{
+    --bs-table-bg: #f3cb76;
+    --bs-table-border-color: #000000;
 }
 
-.nutritional-values-conteiner{
-    margin-right: 24px;
+#table-title{
+    text-align: center;
+    margin-left: 8px;
 }
 
-.values-name{
-    width: 700px;
-    margin-right: 24px;
-    border: 1px solid #616161;
-    padding: 8px;
-    padding-left: 64px;
-    display: flex;
-    justify-content: space-between;
+.table{
+color: #f3cb76;
+}
+
+.table td, .table th {
+    text-align: center;
     font-size: larger;
-    color: #000;
-}
-
-.values{
-    padding-right: 64px;
 }
 
 footer {  
@@ -253,29 +254,13 @@ table th {
     color: #8C2703;
 }
 
-.satisfaction{
-    border: 1px solid #000;
-    width: 449px;
-}
-
-.satisfied-zeb{
-    width: 447px;
-}
-
-.footer-second-title{
-    margin-bottom: 17px;
-}
-
-.footer-third-element{
-    margin-bottom: 234px;
-}
-
 .advertising-zeb{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
     margin-top: 48px;
+    margin-bottom: 48px
 }
 
 .advertising{
@@ -283,21 +268,18 @@ table th {
     flex-direction: column;
     align-items: center;
     margin: auto;
-    width: 310px;
-    height: 310px;
     border: 1px solid #000;
 }
 
 .advertising-body{
-    height: 196px;
-    border: 1px solid #000;
+    max-height: 196px;
     background-color: #f3cb76;
-    width: 311px;
+    max-width: 311px;
 }
 
 .advertising-img-top{
-    width: 308px;
-    height: 173px;
+    width: 100%;
+    max-height: 173px;
 }
 
 .advertising-title{
@@ -309,10 +291,28 @@ table th {
 
 .advertising-text{
     text-align: center;
+    font-size: medium;
 }
 
 .advertising-link{
     color: inherit;
     direction: none;
     text-decoration: none;
+}
+
+.satisfaction{
+    border: 1px solid #000;
+    max-width: 449px;
+}
+
+.satisfied-zeb{
+    max-width: 100%;
+}
+
+.footer-second-title{
+    margin-bottom: 17px;
+}
+
+.footer-third-element{
+    margin-bottom: 234px;
 }
