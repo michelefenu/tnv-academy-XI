@@ -44,6 +44,17 @@ main a{
 
 
 
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h2{
+    display: block;
+}
+
 
 footer {
     margin-top: 64px;
