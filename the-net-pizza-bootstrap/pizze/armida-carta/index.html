@@ -6,7 +6,8 @@
     <title>Pizza Margherita</title>
     <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
+    <link href="./index.css" rel="stylesheet" > 
+  </head>
 <body>
 
   <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
@@ -33,28 +34,50 @@
     </div>
   </nav>
 
-  <header id="title">
+  <header>
       <h1>Pizza Margherita</h1>
-      <p>Pizza classica mozzarella e basilico</p>
+      <p>La più classica delle pizze</p>
   </header>
-      <img src="./pizza-armida.jpg" alt="Immagine a scopo illustrativo">
-  </div>
-    <h2>Lista degli ingredienti</h2>
-    <ul>
-        <li>
-            <a href="https://it.wikipedia.org/wiki/Passata_di_pomodoro" target="_blank">Passata di pomodoro fresco;</a>  
-        </li>
-        <li>
-            <a href="https://it.wikipedia.org/wiki/Mozzarella" target="_blank">Mozzarella;</a>  
-        </li>
-        <li>
-            <a href="https://it.wikipedia.org/wiki/Ocimum_basilicum" target="_blank">Basilico;</a>  
-        </li>
-        <li>
-            <a href="https://it.wikipedia.org/wiki/Olio_di_oliva" target="_blank">Olio EVO;</a>  
-        </li>
-    </ul>
+  <main>
+  <section id="ingredients" class="container">
+    <h2>Ingredienti</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card .h-100">
+          <img src="./images/salsa_di_pomodoro.jpg" class="card-img-top" alt="salsa_di_pomodoro">
+          <div class="card-body">
+            <h5 class="card-title"><a href="https://it.wikipedia.org/wiki/Passata_di_pomodoro" target="_blank">Passata di pomodoro fresco</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card .h-100">
+          <img src="./images/mozzarella.jpg" class="card-img-top" alt="mozzarella">
+          <div class="card-body">
+            <h5 class="card-title"><a href="https://it.wikipedia.org/wiki/Mozzarella" target="_blank">Mozzarella</a>  </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card .h-100">
+          <img src="./images/basilico.jpg" class="card-img-top" alt="basilico">
+          <div class="card-body">
+            <h5 class="card-title"><a href="https://it.wikipedia.org/wiki/Ocimum_basilicum" target="_blank">Basilico;</a>  </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card .h-100">
+          <img src="./images/olio_evo.jpg" class="card-img-top" alt="olio_evo">
+          <div class="card-body">
+            <h5 class="card-title"><a href="https://it.wikipedia.org/wiki/Olio_di_oliva" target="_blank">Olio EVO;</a>  </h5>
+          </div>
+        </div>
+      </div>
+    </div>
 
+  </section>
+  <section id="recipe" class="container">
     <h2>Ricetta</h2>
     <ol>
         <li>Il panetto di pizza viene steso fino a raggiungere un diametro di circa 30 cm;</li>
@@ -64,7 +87,8 @@
         <li>A concludere viene aggiunto un filo d'olio EVO;</li>
         <li>La pizza viene infornata in forno a legna fino a cottura utlimata.</li>
     </ol>
-
+  </section>
+  <section id="nutrients" class="container">
     <h2>Tabella nutrizionale</h2>
     <table>
         <thead>
@@ -100,8 +124,11 @@
             </tr>
         </tbody>
     </table>
-    <a href="./the-net-pizza-html">Torna alla Home</a>
-    
+    <div>
+      <a href="../../index.html">Torna alla Home</a>
+    </div>
+  </section>  
+</main>
 <footer>
     <section class="opening-hours">
       <h2 class="footer-section-title">Orari di Apertura</h2>

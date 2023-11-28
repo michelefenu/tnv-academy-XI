@@ -1,4 +1,72 @@
-div {
-    width:300px;
-    margin:auto;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Roboto&family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto:wght@100;300&display=swap');
+body h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald', sans-serif;
+}
+
+body p, a , ul, ol, table{
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+
+header {
+    background-image: url('./images/pizza-armida.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 4px black;
+    margin-top: 48px;
+}
+
+header h1 {
+    font-size: 6rem;
+    margin: 0;
+}
+
+header p {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+
+main a{
+    color:#8C2703;
+    text-decoration: none;
+
+}
+
+
+
+
+footer {
+    margin-top: 64px;
+    background-color: #8C2703;
+    color: white;
+    box-shadow: 0 -3px 5px lightgray;
+}
+
+footer section {
+    padding: 32px;
+}
+
+table {
+    border: 1px solid lightgray;
+    width: 300px;
+}
+
+table td, table th {
+    padding: 4px;
+    text-align: left;
+}
+
+table th {
+    background-color: white;
+    color: #8C2703;
+}
