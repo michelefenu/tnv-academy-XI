@@ -26,6 +26,23 @@ const buildSection = function(menu, category) {
     }
 }
 
+const buildConsigliati = function(menu){
+    const divParentElement = document.getElementById('consigliati');
+
+    const categoryItems = menu.slice();
+
+    categoryItems.sort(() => Math.random() - 0.5);
+
+    const selectedItems = categoryItems.slice(0, Math.min(3, categoryItems.length));
+
+    for(let categoryItem of selectedItems) {
+        const cardElement = document.createElement('div');
+        cardElement.classList.add('col-12', 'col-sm-6', 'col-md-4', 'py-2');
+        cardElement.innerHTML = buildCard(categoryItem);
+        divParentElement.appendChild(cardElement);
+    }
+}
+
 const buildMenu = function(menu) {
     document.getElementById('loading-data').style.display = 'none';
     document.getElementById('menu').style.display = 'block';
@@ -33,7 +50,10 @@ const buildMenu = function(menu) {
     buildSection(menu, 'antipasti');
     buildSection(menu, 'primi');
     buildSection(menu, 'dolci');
+    buildConsigliati(menu);
 }
+
+
 
 fetch('http://my-json-server.typicode.com/michelefenu/tnv-academy-XI/piatti')
   .then(res => res.json())
