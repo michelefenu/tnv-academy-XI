@@ -23,7 +23,7 @@ const buildCard = function(piatto) {
 
     for(let categoryItem of categoryItems){
     const cardElement = document.createElement('div');
-    cardElement.classList.add('col-12', 'col-sm-6', 'col-md-4', 'py-2');
+    cardElement.classList.add('col-12', 'col-sm-6', 'col-md-4', 'py-4');
     cardElement.innerHTML = buildCard(categoryItem);
     divParentElement.appendChild(cardElement);
   }
