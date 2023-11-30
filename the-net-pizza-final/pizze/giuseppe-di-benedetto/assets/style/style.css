@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Roboto&family=Titillium+Web&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Titillium Web', sans-serif;
+    color: #000;
+    background-color: #f5d99b;
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+header h1 {
+    font-size: 6rem;
+    margin: 0;
+    color: #ffde2f;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+#subtitle , #title{
+    text-shadow: 0 0 4px #000;
+    color: #ffde2f;
+}
+
+h3{
+    font-size: 2.3rem;
+    color: #fa5454;
+}
+
+header{
+    background-image: url("../images/pizza-zeb.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;   
+}
+
+main{
+    margin-bottom: 200px;
+}
+
+.info {
+    justify-content: space-around !important;
+}
+
+.wiki{
+    display: flex;
+    justify-content: center;
+    z-index: 4;
+}
+
+.info-card{
+    width: 18rem;
+    margin: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    background-color: #f3cb76;
+}
+
+.info-card:hover{
+    transform: scale(1.1);
+}
+
+.card-img-top{
+    border-radius: 8px;
+    max-height: 160.92px;
+}
+
+.card-title{
+    padding: 8px;
+}
+
+.card-text{
+    padding: 8px;
+}
+
+.btn{
+    margin: 8px; 
+}
+
+.btn-primary {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #d95252;
+    --bs-btn-border-color: #000;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #cf3535;
+    --bs-btn-hover-border-color: #000;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #cf3535;
+    --bs-btn-active-border-color: #000;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #fb6f6f;
+    --bs-btn-disabled-border-color: #000;
+}
+
+.text-center{
+    margin-top: 16px;
+}
+
+.ingredients-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.ingredients{
+    justify-content: center;
+}
+
+.row{
+    align-items: center;
+    justify-content: center;
+}
+
+.ingredients-body{
+    margin: 16px;
+}
+
+.card-container{
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 48px;
+    padding: 0px;
+    background-color: #f3cb76;
+}
+
+.card-img-ingredients{
+    border-radius: 8px;
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.recipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 816px;
+    margin:auto;
+    padding: 16px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+ol{
+    list-style: none;
+    padding: 0;
+}
+
+ol li{
+    margin: 0px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+ul li{
+    margin: 0px;
+}
+
+.step-title{
+    color: #e94c4c;
+    text-align: center;
+    margin-left: 16px;
+}
+
+.step{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 572px;
+    width: 100%;
+    font-size: large;
+}
+
+.step-img{
+    width: 100%;
+    height: 240px;
+    margin: 16px;
+    padding-bottom: 8px;
+}
+
+#recipe-title{
+margin-left: 16px;
+}
+
+.table{
+    --bs-table-bg: #f3cb76;
+    --bs-table-border-color: #000000;
+}
+
+#table-title{
+    text-align: center;
+    margin-left: 8px;
+}
+
+.table{
+color: #f3cb76;
+}
+
+.table td, .table th {
+    text-align: center;
+    font-size: larger;
+}
+
+footer {  
+    background-color: #8C2703;
+    color: white;
+    box-shadow: 0 -3px 5px lightgray;
+}
+
+footer section {
+    padding: 32px;
+}
+
+table {
+    border: 1px solid lightgray;
+    width: 300px;
+}
+
+table td, table th {
+    padding: 4px;
+    text-align: left;
+}
+
+table th {
+    background-color: white;
+    color: #8C2703;
+}
+
+.advertising-zeb{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+    margin-bottom: 48px
+}
+
+.advertising{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    border: 1px solid #000;
+}
+
+.advertising-body{
+    max-height: 196px;
+    background-color: #f3cb76;
+    max-width: 311px;
+}
+
+.advertising-img-top{
+    width: 100%;
+    max-height: 173px;
+}
+
+.advertising-title{
+    text-align: center;
+    border-bottom: 1px solid #000;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.advertising-text{
+    text-align: center;
+    font-size: medium;
+}
+
+.link{
+    color: inherit;
+    direction: none;
+    text-decoration: none;
+}
+
+#dishes{
+    text-align: center;
+    margin-bottom: 48px;
+    margin-top: -148px;
+}
+
+.satisfaction{
+    border: 1px solid #000;
+    max-width: 449px;
+}
+
+.satisfied-zeb{
+    max-width: 100%;
+}
+
+.footer-second-title{
+    margin-bottom: 17px;
+}
+
+.footer-third-element{
+    margin-bottom: 234px;
+}
