@@ -40,7 +40,7 @@ const buildSection = function (menu, numbersOfcards) {
 
 
 
-fetch('http://my-json-server.typicode.com/michelefenu/tnv-academy-XI/piatti')
+fetch('https://my-json-server.typicode.com/michelefenu/tnv-academy-XI/piatti')
   .then(res => res.json())
   .then(res => buildSection(res, 3))
   .catch(err => console.error('Errore', err))
