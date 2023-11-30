@@ -3,64 +3,321 @@
 <head>
     <title>Pizza di Gianni</title>
     <link rel="icon" type="image/x-icon" href="./favicon-gd/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./styles/style-gd.css">
     
 </head>
 <body>
-    <h1>Pizza Las Vegans</h1>
-    <p>La pizza per i vegani che scommettono sul gusto</p>
-    <img src="./images/mushroom-pizza-vegetarian.jpg" alt="L'immagine ha il solo scopo di presentare il prodotto" width="600">
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+        <div class="container-fluid">
+          <img src="./images/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          <a class="navbar-brand" href="#">THE NET PIZZA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">I nostri piatti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contatti</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <header>
+        <h1 id="site-title">Pizza Las Vegans</h1>
+        <p>La pizza per i vegani che scommettono sul gusto</p>
+      </header>
+
+      <div class="container">
+        <section class="ingredients">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Ingredienti</h2>
+                    <div class="separator"></div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 py-4">
+                    <div class="card shadow">
+                    <a href="https://it.wikipedia.org/wiki/Olio_di_oliva">
+                        <img src="./images/olio.jpeg" alt="Ingrediente Olio" class="card-img-top img-fluid"/>
+                    </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Olio extravergine di oliva di produzione certificata</h5>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-sm-6 col-md-4 py-4">
+                    <div class="card shadow">
+                    <a href="https://it.wikipedia.org/wiki/Farina">
+                        <img src="./images/farina.jpeg" alt="Ingrediente Farina" class="card-img-top img-fluid"/>
+                    </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Farina selezionata senza <br>uso di miglioratori</h5>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 py-4">
+                    <div class="card shadow">
+                    <a href="https://it.wikipedia.org/wiki/Cucurbita_pepo">
+                        <img src="./images/zucchine.jpeg" alt="Ingrediente Zucchine" class="card-img-top img-fluid"/>
+                    </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Zucchine da coltivazioni Bio</h5>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-sm-6 col-md-4 py-4">
+                    <div class="card shadow">
+                    <a href="https://it.wikipedia.org/wiki/Porcino">
+                        <img src="./images/funghi2.jpg" alt="Ingrediente Funghi" class="card-img-top img-fluid"/>
+                    </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Funghi porcini di montagna</h5>
+                    </div>
+                </div>
+            
+                <div class="col-12 col-sm-6 col-md-4 py-4">
+                    <div class="card shadow">
+                    <a href="https://it.wikipedia.org/wiki/Tofu">
+                        <img src="./images/tofu.jpg" alt="Ingrediente Tofu" class="card-img-top img-fluid"/>
+                    </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Tofu vellutato preparato con cura in area protetta</h5>
+                    </div>
+                </div>
+            
+                <div class="col-12 col-sm-6 col-md-4 py-4">
+                    <div class="card shadow">
+                    <a href="https://it.wikipedia.org/wiki/Solanum_melongena">
+                        <img src="./images/melanzane-fix.jpg" alt="Ingrediente Melanzane" class="card-img-top img-fluid"/>
+                    </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Melanzane da coltivazioni Bio</h5>
+                    </div>
+                </div>
+            
+                <div class="col-12 col-sm-6 col-md-4 py-4">
+                    <div class="card shadow">
+                    <a href="https://it.wikipedia.org/wiki/Peperone">
+                        <img src="./images/peperoni.jpg" alt="Ingrediente Peperoni" class="card-img-top img-fluid"/>
+                    </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Peperoni da coltivazioni Bio</h5>
+                    </div>
+                </div>
+            
+                <div class="col-12 col-sm-6 col-md-4 py-4">
+                    <div class="card shadow">
+                    <a href="https://it.wikipedia.org/wiki/Salsa_di_pomodoro">
+                        <img src="./images/salsa-pom.jpeg" alt="Ingrediente Salsa Pomodoro" class="card-img-top img-fluid"/>
+                    </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Salsa di pomodoro da coltivazioni Bio</h5>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-sm-6 col-md-4 py-4">
+                    <div class="card shadow">
+                    <a href="https://it.wikipedia.org/wiki/Ocimum_basilicum">
+                        <img src="./images/basilico.jpeg" alt="Ingrediente Basilico" class="card-img-top img-fluid"/>
+                    </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Basilico fresco di nostra produzione</h5>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="info">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Ricetta</h2>
+                    <div class="separator"></div>
+                </div>
+            </div>
+            <div class="py-4">
+                <p>Per prima cosa sciogliete in 300 ml di acqua a temperatura ambiente il lievito di birra e lo zucchero, 
+                    nei restanti 100 ml sciogliete invece il sale. Intanto in una ciotola capiente versate 200 g di farina 
+                    con 150 ml di acqua e lievito e mescolate: dovrete ottenere una pastella molto densa che coprirete con 
+                    un canovaccio e lascerete riposare per 20 minuti. Trascorso il tempo di posa, troverete delle bollicine in 
+                    superficie: a questo punto unite il resto della farina all’acqua con il lievito e impastate per bene; una volta 
+                    che l’acqua si sarà assorbita, aggiungete il resto dell’acqua con il sale e l’olio e continuate a impastare per 
+                    almeno 15 minuti: l’impasto dovrà essere morbido e appiccicoso.
+                    Al termine della lievitazione disponete sulla pizza la passata di pomodoro (o una parte del condimento che avrete 
+                    preparato). La pizza è ora pronta per essere infornata: vi consigliamo di cuocerla impostando la temperatura massima 
+                    del forno per 15/20 minuti. Tirate poi fuori la pizza, aggiungete il resto del condimento e infornate ancora, sempre 
+                    al massimo della temperatura, per altri 15 minuti.
+                    </p>
+            </div>
+        
+
+            <div class="container">       
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-12 text-center">
+                        <h2 class="section-title">Guarda la preparazione</h2>
+                        <div class="separator"></div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center align-items-center py-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DaoEqhJYvgs?si=LDeG4ebWKSisRm-J" 
+                            title="Come preparare la pizza vegana" style="border: 0;" allow="accelerometer; autoplay; clipboard-write; 
+                            encrypted-media; gyroscope; picture-in-picture; web-share">
+                    </iframe>
+                </div>
+            </div> 
+            
+            <div class="container"> 
+                <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 class="section-title">Valori nutrizionali</h2>
+                            <div class="separator"></div>
+                        </div>
+                </div>
+                <div class="row col-sm-4 offset-sm-4 col-md-8 offset-md-2 col-lg-6 offset-lg-3">   
+                    <table class="table text-center">
+                        <thead>
+                        <tr><th>Valori per</th><th>100 grammi</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Calorie</td><td>266 Kcal</td></tr>
+                            <tr><td>Carboidrati</td><td>33 gr</td></tr>
+                            <tr><td>Proteine</td><td>11 gr</td></tr>
+                            <tr><td>Grassi</td><td>10 gr</td></tr>
+                            <tr><td>Sodio</td><td>598 mg</td></tr>
+                            <tr><td>Potassio</td><td>172 mg</td></tr>
+                            <tr><td>Colesterolo</td><td>17 mg</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="container"> 
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="section-title">Ordiniamo da bere...</h2>
+                        <div class="separator"></div>
+                    </div>
+                </div>
+                <div id="carouseSlides" class="carousel slide py-4" data-bs-ride="carousel" data-bs-interval="2500">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./images/1079_birra.jpg" class="d-block w-100" alt="720">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/1079birra-boccali.jpg" class="d-block w-100" alt="720">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/1079le-migliori-birre-artigianali-in-italia.jpg" class="d-block w-100" alt="720">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/1079top-birra-in-botte.jpg" class="d-block w-100" alt="720">
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                        <p id="bere"><em>Ma ci raccomandiamo...</em><strong> ricordati di bere responsabilmente!</strong></p>
+                </div>
+              </div>
+
+            <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 class="section-title">No pizza?... Si alle alternative...</h2>
+                            <div class="separator"></div>
+                        </div>
+                    </div>
+
+                    <div id="piatti" class="row"></div>
+
+            </div>            
+        </section>
+    </div>
+
+    <footer class="container-fluid">
+        <div class="row">
+          <section class="opening-hours col-12 col-md-4">
+            <h2 class="footer-section-title">Orari di Apertura</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Giorno</th>
+                  <th>Orario</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lunedì</td>
+                  <td>Chiuso</td>
+                </tr>
+                <tr>
+                  <td>Martedì</td>
+                  <td>19:00 - 24:00</td>
+                </tr>
+                <tr>
+                  <td>Mercoledì</td>
+                  <td>19:00 - 24:00</td>
+                </tr>
+                <tr>
+                  <td>Giovedì</td>
+                  <td>19:00 - 24:00</td>
+                </tr>
+                <tr>
+                  <td>Venerdì</td>
+                  <td>19:00 - 24:00</td>
+                </tr>
+                <tr>
+                  <td>Sabato</td>
+                  <td>19:00 - 24:00</td>
+                </tr>
+                <tr>
+                  <td>Domenica</td>
+                  <td>19:00 - 24:00</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section class="where-we-are col-12  col-md-4">
+            <h2 class="footer-section-title">Dove Siamo</h2>
+            <iframe width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=8.286395072937013%2C39.97725164260922%2C8.323259353637697%2C40.000563846393405&amp;layer=mapnik&amp;marker=39.988909359691846%2C8.304836049999949"
+              style="border: 1px solid black"></iframe>
+          </section>
+          <section class="where-we-are col-12  col-md-4">
+            <h2 class="footer-section-title">Credits</h2>
+            Questo sito è realizzato dagli studenti della TNV Academy XI
+          </section>
+        </div>
+      </footer>
     
-    <h2>Ingredienti</h2>
-        <ul>
-            <li><a href="https://it.wikipedia.org/wiki/Farina">Farina 0</a></li>
-            <li><a href="https://it.wikipedia.org/wiki/Acqua">Acqua</a></li>
-            <li><a href="https://it.wikipedia.org/wiki/Olio_di_oliva">Olio extravergine d'oliva</a></li>
-            <li><a href="https://it.wikipedia.org/wiki/Saccharomyces_cerevisiae">Lievito di birra</a></li>
-            <li><a href="https://it.wikipedia.org/wiki/Sale">Sale</a></li>
-            <li><a href="https://it.wikipedia.org/wiki/Salsa_di_pomodoro">Salsa di pomodoro</a></li>
-            <li><a href="https://it.wikipedia.org/wiki/Tofu">Tofu vellutato</a></li>
-            <li><a href="https://it.wikipedia.org/wiki/Porcino">Funghi porcini</a></li>
-            <li><a href="https://it.wikipedia.org/wiki/Cucurbita_pepo">Zucchine</a></li>
-            <li><a href="https://it.wikipedia.org/wiki/Peperone">Peperoni</a></li>
-        </ul>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
-    <h2>Ricetta</h2>
-        <p>Per prima cosa sciogliete in 300 ml di acqua a temperatura ambiente il lievito di birra e lo zucchero, 
-        nei restanti 100 ml sciogliete invece il sale. Intanto in una ciotola capiente versate 200 g di farina 
-        con 150 ml di acqua e lievito e mescolate: dovrete ottenere una pastella molto densa che coprirete con 
-        un canovaccio e lascerete riposare per 20 minuti. Trascorso il tempo di posa, troverete delle bollicine in 
-        superficie: a questo punto unite il resto della farina all’acqua con il lievito e impastate per bene; una volta 
-        che l’acqua si sarà assorbita, aggiungete il resto dell’acqua con il sale e l’olio e continuate a impastare per 
-        almeno 15 minuti: l’impasto dovrà essere morbido e appiccicoso.
-        Al termine della lievitazione disponete sulla pizza la passata di pomodoro (o una parte del condimento che avrete 
-        preparato). La pizza è ora pronta per essere infornata: vi consigliamo di cuocerla impostando la temperatura massima 
-        del forno per 15/20 minuti. Tirate poi fuori la pizza, aggiungete il resto del condimento e infornate ancora, sempre 
-        al massimo della temperatura, per altri 15 minuti.
-        </p>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/DaoEqhJYvgs?si=LDeG4ebWKSisRm-J" 
-            title="Come preparare la pizza vegana" style="border: 0;" allow="accelerometer; autoplay; clipboard-write; 
-            encrypted-media; gyroscope; picture-in-picture; web-share">
-        </iframe>
-
-        <table>
-            <caption>
-                <h2>Valori nutrizionali</h2>
-            </caption>
-            <thead>
-                <tr><th>Valori per</th><th>100 grammi</th></tr>
-            </thead>
-            <tbody>
-                <tr><td>Calorie</td><td>266 Kcal</td></tr>
-                <tr><td>Carboidrati</td><td>33 gr</td></tr>
-                <tr><td>Proteine</td><td>11 gr</td></tr>
-                <tr><td>Grassi</td><td>10 gr</td></tr>
-                <tr><td>Sodio</td><td>598 mg</td></tr>
-                <tr><td>Potassio</td><td>172 mg</td></tr>
-                <tr><td>Colesterolo</td><td>17 mg</td></tr>
-            </tbody>
-        </table>
-        <br>
-    <a href="../../index.html">Back</a>
+    <script src="./scripts/index-gd.js"></script>
 </body>
 </html>
