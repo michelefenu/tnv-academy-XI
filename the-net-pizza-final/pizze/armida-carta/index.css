@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Roboto&family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto:wght@100;300&display=swap");
+
+body {
+    font-size: 16px;
+}
+
+body h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+body p,
+a,
+ul,
+ol,
+table {
+  font-family: "Roboto Flex", sans-serif;
+}
+
+header {
+  background-image: url("./images/pizza-armida.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 0 4px black;
+  margin-top: 48px;
+}
+
+header h1 {
+ /* font-size: 6rem;*/
+  margin: 0;
+}
+
+header p {
+  /*font-size: 2rem;*/
+  margin: 0;
+}
+
+main a {
+  color: #8c2703;
+  text-decoration: none;
+}
+
+.title {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#ingredients {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#recipe{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+#nutrients {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#values{
+  border: 2px solid #8c2703;
+  border-spacing: 0;
+  border-collapse:separate;
+  border-radius: 10px;
+  width: 50%;
+}
+#values th:not(:last-child),
+#values td:not(:last-child) {
+ border-right: 1px solid #8c2703;
+}
+#values>thead>tr:not(:last-child)>th,
+#values>thead>tr:not(:last-child)>td,
+#values>tbody>tr:not(:last-child)>th,
+#values>tbody>tr:not(:last-child)>td,
+#values>tfoot>tr:not(:last-child)>th,
+#values>tfoot>tr:not(:last-child)>td,
+#values>tr:not(:last-child)>td,
+#values>tr:not(:last-child)>th,
+#values>thead:not(:last-child),
+#values>tbody:not(:last-child),
+#values>tfoot:not(:last-child) {
+ border-bottom: 1px solid #8c2703;
+}
+#home_button {
+    margin: 40px auto 10px auto;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media screen and (min-width: 576px) {
+    header {
+        height: 400px;
+    }
+    header h1{
+        font-size: 5em;
+    }
+
+    header p{
+        font-size: 2.5em;
+    }
+    h2{
+        font-size: 2.5em;
+    }
+
+    li, th, td, .card-title, #home_button, .footer-section-title{
+        font-size: 1.3em;
+    }
+  }
+  /*
+@media screen and (min-width: 576px) {
+    h1{
+        font-size: 3em;
+     }
+    .card-title {
+        font-size: 1em;
+    }
+}*/
+@media screen and (max-width: 576px) {
+    header {
+        height: 200px;
+    }
+    header h1{
+       font-size: 2em;
+    }
+    header p{
+        font-size: 1em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    li, th, td, .card-title, #home_button, .footer-section-title{
+        font-size: 0.8em;
+    }
+}
+
+footer {
+  margin-top: 64px;
+  background-color: #8c2703;
+  color: white;
+  box-shadow: 0 -3px 5px lightgray;
+}
+
+footer section {
+  padding: 32px;
+}
+
+#orari {
+  width: 300px;
+}
+
+#orari td,
+#orari th {
+  padding: 4px;
+  text-align: center;
+}
+
+
+
+
+
+
+
