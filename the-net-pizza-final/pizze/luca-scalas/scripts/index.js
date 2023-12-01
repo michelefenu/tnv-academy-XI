@@ -55,7 +55,7 @@ const buildMenu = function(menu) {
 
 
 
-fetch('http://my-json-server.typicode.com/michelefenu/tnv-academy-XI/piatti')
+fetch('https://my-json-server.typicode.com/michelefenu/tnv-academy-XI/piatti')
   .then(res => res.json())
   .then(res => buildMenu(res))
   .catch(err => console.log('ERRORE'))
