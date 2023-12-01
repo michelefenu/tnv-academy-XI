@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col-12 pt-5 pb-2">
+        <h3>{{ sectionTitle }}</h3>
+    </div>
+
+    <div class="row">
+        <tnv-menu-item *ngFor="let sectionMenuItem of sectionMenuItems" [piatto]="sectionMenuItem" class="col-12 col-sm-6 col-md-4 py-2"></tnv-menu-item>
+    </div>
+</div>

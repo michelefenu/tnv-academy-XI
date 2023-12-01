@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Roboto&family=Titillium+Web&display=swap');
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.section-title {
+    color: #0371A6;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 64px;
+}
+
+.separator {
+    width: 100px;
+    height: 4px;
+    background-color: #c1922e;
+    margin: 0 auto;
+}
+
+a {
+    color: #730217;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c80125;
+    text-decoration: underline;
+}

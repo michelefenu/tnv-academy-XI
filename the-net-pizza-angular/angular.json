@@ -12,7 +12,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "tnv",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
@@ -97,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "9fb6ffe8-9da4-45c0-9859-004f07d48e52"
   }
 }
