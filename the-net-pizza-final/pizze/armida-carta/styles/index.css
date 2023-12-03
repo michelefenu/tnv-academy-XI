@@ -24,7 +24,7 @@ table {
 }
 
 header {
-  background-image: url("./images/pizza-armida.jpg");
+  background-image: url("../images/pizza-armida.jpg");
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -56,7 +56,7 @@ main a {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-#ingredients {
+#ingredients{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -71,7 +71,7 @@ main a {
     text-align: justify;
 }
 
-#nutrients {
+#nutrients, #recommended h2{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -103,6 +103,7 @@ main a {
 #values>tfoot:not(:last-child) {
  border-bottom: 1px solid #8c2703;
 }
+
 #home_button {
     margin: 40px auto 10px auto;
     padding: 0px;

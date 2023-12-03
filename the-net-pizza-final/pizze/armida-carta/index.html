@@ -15,7 +15,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link href="./index.css" rel="stylesheet" />
+    <link href="./styles/index.css" rel="stylesheet" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
@@ -65,7 +65,7 @@
     </nav>
 
     <header>
-      <h1>Pizza Margherita</h1>
+      <h1 id="site-title">Pizza Margherita</h1>
       <p>La più classica delle pizze</p>
     </header>
     <main>
@@ -196,6 +196,10 @@
                 </tbody>
         </table>
       </section>
+      <section id="recommended" class="container">
+        <h2 class="title">I nostri piatti consigliati</h2>
+            <div id="antipasti" class="row"></div>
+      </section>
       <div class="container-fluid">
         <div class="row"  >
           <div class="col-2" id="home_button">
@@ -264,5 +268,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script
+    src="./scripts/index.js"></script>
   </body>
 </html>
