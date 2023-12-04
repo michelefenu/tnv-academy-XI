@@ -1,278 +1,99 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
-  <title>Pizza di Simone</title>
-  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/styles/myStyle.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pizza di Simone</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
-
 <body>
-
-  <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
-    <div class="container-fluid">
-      <img src="./assets/images/favicon.ico" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-      <a class="navbar-brand" href="#">THE NET PIZZA</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">I nostri piatti</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contatti</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <header>
-
-    <h1>La <br> Quattro <br> Formaggi</h1>
-
-  </header>
-
-  <div class="row">
-    <div class="col-12">
-      <h2 class="section-title">La nostra pizza</h2>
-      <div class="separator"></div>
-    </div>
-  </div>
-
-  <section id="descript">
-    <p> La Pizza ai quattro formaggi è una varietà di pizza <br>
-      condita con una combinazione di quattro tipi di formaggio <br>
-      sciolti insieme con salsa di pomodoro oppure bianca
-    </p> <br>
-  </section>
-
-  <div class="row">
-    <div class="col-12">
-      <h2 class="section-title">I Nostri Ingredienti</h2>
-      <div class="separator"></div>
-    </div>
-  </div>
-
-
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-sm-6 col-md-3 py-2">
-        <a href="https://it.wikipedia.org/wiki/Gorgonzola" class="card-link">
-          <div class="card"
-            style="background-image: url('assets/images/gorgonzola.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;height: 600px">
-            <div class="card-body">
-              <p class="card-text">Gorgonzola</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-3 py-2">
-        <a href="https://it.wikipedia.org/wiki/Mozzarella" class="card-link">
-          <div class="card"
-            style="background-image: url('assets/images/mozzarella.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;height: 600px">
-            <div class="card-body">
-              <p class="card-text">Mozzarella</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-3 py-2">
-        <a href="https://it.wikipedia.org/wiki/Parmigiano_Reggiano" class="card-link">
-          <div class="card"
-            style="background-image: url('assets/images/parmigiano.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 600px">
-            <div class="card-body">
-              <p class="card-text">Parmigiano</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-3 py-2">
-        <a href="https://it.wikipedia.org/wiki/Fontina" class="card-link">
-          <div class="card"
-            style="background-image: url('assets/images/fontina.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;height: 600px">
-            <div class="card-body">
-              <p class="card-text">Fontina</p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-5 d-flex align-items-center">
-
-        <img src="./assets/images/pizza2.jpg" class="img-fluid" alt="L'immagine ha scopo illustrativo">
-      </div>
-      <div class="col-md-7">
-
-        <section class="valoriNutrizionali mt-4 mb-5 text-center ">
-          
-          <div class="row">
-            <div class="col-12">
-              <h2 class="section-title">Valori Nutrizionali</h2>
-              <div class="separator"></div>
-            </div>
-          </div>
-
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Componente</th>
-                <th>Quantità per pizza</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Calorie</td>
-                <td>1200</td>
-              </tr>
-              <tr>
-                <td>Grassi totali</td>
-                <td>48g</td>
-              </tr>
-              <tr>
-                <td>Grassi saturi</td>
-                <td>20g</td>
-              </tr>
-              <tr>
-                <td>Colesterolo</td>
-                <td>120mg</td>
-              </tr>
-              <tr>
-                <td>Sodio</td>
-                <td>2800mg</td>
-              </tr>
-              <tr>
-                <td>Carboidrati totali</td>
-                <td>140g</td>
-              </tr>
-              <tr>
-                <td>Fibra alimentare</td>
-                <td>12g</td>
-              </tr>
-              <tr>
-                <td>Zuccheri</td>
-                <td>20g</td>
-              </tr>
-              <tr>
-                <td>Proteine</td>
-                <td>60g</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <a id="wiki-link" href="https://it.wikipedia.org/wiki/Pizza_ai_quattro_formaggi" class="card text-center">
-            <div class="card-body">
-              <h2 class="card-title">Guarda <br>la Ricetta <br> su Wikipedia:</h2>
-            </div>
-          </a>
-        </section>
-      </div>
-    </div>
-
-
+    <h1>Pizza ai Quattro Formaggi</h1>
     
-      <section class="form">
-        
-        <div class="row">
-          <div class="col-12">
-            <h2 class="section-title">Ti è piaciuta la pizza ? <br> Lascia una recensione</h2>
-            <div class="separator"></div>
-          </div>
-        </div>
+       <p>
+         <em>La Pizza ai quattro formaggi è una varietà di pizza <br>
+        condita con una combinazione di quattro tipi di formaggio <br>
+        sciolti insieme con salsa di pomodoro oppure bianca</em> 
+        </p> <br>
 
-        <form action="">
-          <label for="like">Voto:</label>
-          <input type="radio" name="like" id="like"> 0
-          <input type="radio" name="like" id="like"> 1
-          <input type="radio" name="like" id="like"> 2
-          <input type="radio" name="like" id="like"> 3
-          <input type="radio" name="like" id="like"> 4
-          <input type="radio" name="like" id="like"> 5 <br>
-          <textarea placeholder="Lascia un commento" name="commento" id="commento" cols="50" rows="5"></textarea>
-          <br>
-          <input type="submit" value="Invia">
-        </form>
-      </section>
-   
-  </div>
+    <img src="./images/pizza-5-formaggi.jpg" width="300" alt="L'immagine ha scopo illustrativo">
 
-  <footer class="container-fluid">
-    <div class="row">
-      <section class="opening-hours col-12 col-md-4">
-        <h2 class="footer-section-title">Orari di Apertura</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Giorno</th>
-              <th>Orario</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Lunedì</td>
-              <td>Chiuso</td>
-            </tr>
-            <tr>
-              <td>Martedì</td>
-              <td>19:00 - 24:00</td>
-            </tr>
-            <tr>
-              <td>Mercoledì</td>
-              <td>19:00 - 24:00</td>
-            </tr>
-            <tr>
-              <td>Giovedì</td>
-              <td>19:00 - 24:00</td>
-            </tr>
-            <tr>
-              <td>Venerdì</td>
-              <td>19:00 - 24:00</td>
-            </tr>
-            <tr>
-              <td>Sabato</td>
-              <td>19:00 - 24:00</td>
-            </tr>
-            <tr>
-              <td>Domenica</td>
-              <td>19:00 - 24:00</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section class="where-we-are col-12  col-md-4">
-        <h2 class="footer-section-title">Dove Siamo</h2>
-        <iframe width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=8.286395072937013%2C39.97725164260922%2C8.323259353637697%2C40.000563846393405&amp;layer=mapnik&amp;marker=39.988909359691846%2C8.304836049999949"
-          style="border: 1px solid black"></iframe>
-      </section>
-      <section class="where-we-are col-12  col-md-4">
-        <h2 class="footer-section-title">Credits</h2>
-        Questo sito è realizzato dagli studenti della TNV Academy XI
-      </section>
-    </div>
-  </footer>
+    <h3>Ingredienti:</h3>
+    <ul>
+        <li>Gorgonzola</li>
+        <li>Mozzarella</li>
+        <li>Fontina</li>
+        <li>parmigiano</li>
+        <li>Salsa di pomodoro <em>(pizza rossa)</em> </li>
+    </ul>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+    <img src="./images/pizza2.jpg" width="300" alt="L'immagine ha scopo illustrativo">
+
+    <h3>Guarda la Ricetta originale su Wikipedia:</h3>
+    <a href="https://it.wikipedia.org/wiki/Pizza_ai_quattro_formaggi">la pizza 4 formaggi!</a>
+
+    <h3>valori Nutrizionali:</h3>
+    <table>
+        <tr>
+            <th>Componente</th>
+            <th>Quantità per pizza</th>
+        </tr>
+        <tr>
+            <td>Calorie</td>
+            <td>1200</td>
+        </tr>
+        <tr>
+            <td>Grassi totali</td>
+            <td>48g</td>
+        </tr>
+        <tr>
+            <td>Grassi saturi</td>
+            <td>20g</td>
+        </tr>
+        <tr>
+            <td>Colesterolo</td>
+            <td>120mg</td>
+        </tr>
+        <tr>
+            <td>Sodio</td>
+            <td>2800mg</td>
+        </tr>
+        <tr>
+            <td>Carboidrati totali</td>
+            <td>140g</td>
+        </tr>
+        <tr>
+            <td>Fibra alimentare</td>
+            <td>12g</td>
+        </tr>
+        <tr>
+            <td>Zuccheri</td>
+            <td>20g</td>
+        </tr>
+        <tr>
+            <td>Proteine</td>
+            <td>60g</td>
+        </tr>
+    </table>
+
+    <img src="./images/pizza3.jpg" width="300" alt="L'immagine ha scopo illustrativo">
+
+    <h3>Ti è piaciuta la pizza ? Lascia una recensione</h3>
+    
+    <form action="">
+
+        <label for="like">Voto:</label>
+        <input type="radio" name="like" id="like"> 0 
+        <input type="radio" name="like" id="like"> 1 
+        <input type="radio" name="like" id="like"> 2 
+        <input type="radio" name="like" id="like"> 3 
+        <input type="radio" name="like" id="like"> 4 
+        <input type="radio" name="like" id="like"> 5 <br>
+
+        <textarea placeholder="Lascia un commento" name="commento" id="commento" cols="50" rows="5"></textarea>
+        <br>
+        <input type="submit" value="Invia">
+
+    </form>
+
+
 
 </body>
-
 </html>
