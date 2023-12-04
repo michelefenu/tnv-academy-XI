@@ -1,0 +1,170 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Roboto:wght@100&family=Titillium+Web&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+
+header{
+  background-image: url('../pizza-valentina.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 0 4px black;
+  margin-top: 48px;
+}
+
+header h1 {
+  font-size: 6rem;
+  margin: 0;
+}
+
+header p {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+}
+
+section#menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  gap: 16px;
+}
+
+section#menu ul li {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  height: 150px;
+  width: 280px;
+  list-style-type: none;
+  padding: 8px;
+  box-shadow: 1px 1px 2px lightgrey;
+}
+
+footer {
+  margin-top: 64px;
+  background-color: #8C2703;
+  color: white;
+  box-shadow: 0 -3px 5px lightgray;
+}
+
+footer section {
+  padding: 32px;
+}
+
+table {
+  border: 1px solid lightgray;
+  width: 300px;
+}
+
+table td, table th {
+  padding: 4px;
+  text-align: center;
+}
+
+table th {
+  background-color: white;
+  color: #8C2703;
+}
+
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 64px;
+}
+
+.container section {
+  margin-top: 64px;
+  margin-bottom: 32px;
+}
+
+.list {
+  color: black;
+  text-align: left;
+  font-size: 1,5rem;
+  margin: 0;
+}
+
+.menu {
+  color: rgb(3, 113, 166);
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.separator {
+  width: 100px;
+  height: 4px;
+  background-color: #c1922e;
+  margin: 0 auto;
+}
+
+.menu h3 {
+  font-size: 1.5em;
+}
+
+a {
+  color: #730217;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c80125;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #8C2703;
+  color: white;
+}
+
+table {
+  border: 1px solid lightgray;
+  width: 80%;
+}
+
+table td, table th {
+  font-size: 1,5rem;
+  padding: 4px;
+}
+
+
+@media screen and (max-width: 600px) { 
+  header h1 {
+      margin-top: 42px;
+      font-size: 4rem
+  }
+  
+  header p {
+      color: white;
+      font-family: 'Pacifico', cursive;
+      font-size: 1.5rem;
+  }
+
+  header {
+      height: 350px;
+  }
+
+  .section-title  {
+      font-size: 2.5em;
+  }
+
+}
