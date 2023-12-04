@@ -2,7 +2,7 @@
   "piatti": [
     {
       "id": 1,
-      "category": "antipasti",
+      "category": "antipasti di terra",
       "title": "Tagliere di salumi",
       "description": "Un assortimento di salumi regionali ed extraregionali.",
       "imageUrl": "https://michelefenu.github.io/tnv-academy-XI/the-net-pizza-bootstrap/assets/images/tagliere-salumi.jpg",
@@ -28,7 +28,7 @@
     },
     {
       "id": 2,
-      "category": "antipasti",
+      "category": "antipasti di mare",
       "title": "Antipasto di Mare",
       "description": "Una selezione di antipasti tradizionali a base di pesce.",
       "imageUrl": "https://michelefenu.github.io/tnv-academy-XI/the-net-pizza-bootstrap/assets/images/antipasto-mare.jpg",
@@ -54,7 +54,7 @@
     },
     {
       "id": 3,
-      "category": "antipasti",
+      "category": "antipasti di mare",
       "title": "Zuppa di Mare",
       "description": "Zuppa di cozze e arselle su crostini piccanti.",
       "imageUrl": "https://michelefenu.github.io/tnv-academy-XI/the-net-pizza-bootstrap/assets/images/zuppa-mare.jpg",
