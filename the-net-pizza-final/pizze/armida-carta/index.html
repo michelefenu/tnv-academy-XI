@@ -1,79 +1,282 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pizza Margherita</title>
-</head>
-<body>
-    <h1>Pizza Margherita</h1>
-    <p>Pizza classica mozzarella e basilico</p>
-    <img src="./pizza-armida.jpg" alt="Immagine a scopo illustrativo">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/pizza.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link href="./styles/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+      <div class="container-fluid">
+        <img
+          src="../../assets/images/logo.png"
+          alt="Logo"
+          width="30"
+          height="24"
+          class="d-inline-block align-text-top"
+        />
+        <a class="navbar-brand" href="#">THE NET PIZZA</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../../index.html/#menu"
+                >I nostri piatti</a
+              ><!--Da rivedere-->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../../index.html/#contacts"
+                >Contatti</a
+              ><!--Da rivedere-->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <h2>Lista degli ingredienti</h2>
-    <ul>
-        <li>
-            <a href="https://it.wikipedia.org/wiki/Passata_di_pomodoro" target="_blank">Passata di pomodoro fresco;</a>  
-        </li>
-        <li>
-            <a href="https://it.wikipedia.org/wiki/Mozzarella" target="_blank">Mozzarella;</a>  
-        </li>
-        <li>
-            <a href="https://it.wikipedia.org/wiki/Ocimum_basilicum" target="_blank">Basilico;</a>  
-        </li>
-        <li>
-            <a href="https://it.wikipedia.org/wiki/Olio_di_oliva" target="_blank">Olio EVO;</a>  
-        </li>
-    </ul>
+    <header>
+      <h1 id="site-title">Pizza Margherita</h1>
+      <p>La più classica delle pizze</p>
+    </header>
+    <main>
+      <section id="ingredients" class="container ">
+        <h2 class="title">Ingredienti</h2>
 
-    <h2>Ricetta</h2>
-    <ol>
-        <li>Il panetto di pizza viene steso fino a raggiungere un diametro di circa 30 cm;</li>
-        <li>La base ottenuta viene ricoperta con 2 cucchiai di passata di pomodoro fresco;</li>
-        <li>Viene aggiunta una mozzarella tagliata a cubetti;</li>
-        <li>Vengono aggiunte delle foglie di basilico;</li>
-        <li>A concludere viene aggiunto un filo d'olio EVO;</li>
-        <li>La pizza viene infornata in forno a legna fino a cottura utlimata.</li>
-    </ol>
+        <div class="row row-cols-2 row-cols-xl-4 g-4">
+          <div class="col">
+            <div class="card">
+              <img
+                src="./images/salsa_di_pomodoro.jpg"
+                class="card-img-top img-fluid"
+                id="pomodoro"
+                alt="salsa_di_pomodoro"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                  <a
+                    href="https://it.wikipedia.org/wiki/Passata_di_pomodoro"
+                    target="_blank"
+                    >Passata di pomodoro</a
+                  >
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="./images/mozzarella.jpg"
+                class="card-img-top img-fluid"
+                alt="mozzarella"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                  <a
+                    href="https://it.wikipedia.org/wiki/Mozzarella"
+                    target="_blank"
+                    >Mozzarella</a
+                  >
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="./images/basilico.jpg"
+                class="card-img-top img-fluid"
+                alt="basilico"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                  <a
+                    href="https://it.wikipedia.org/wiki/Ocimum_basilicum"
+                    target="_blank"
+                    >Basilico</a
+                  >
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="./images/olio_evo2.jpg"
+                class="card-img-top img-fluid"
+                id="olio"
+                alt="olio_evo"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                  <a
+                    href="https://it.wikipedia.org/wiki/Olio_di_oliva"
+                    target="_blank"
+                    >Olio EVO</a
+                  >
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="recipe" class="container">
+        <h2 class="title">Ricetta</h2>
+        <div class="row  row-cols-xl-9 g-4">
+          <p>
+            Il panetto di pizza viene steso fino a raggiungere un diametro di circa 30 cm.
+            </br>La base ottenuta viene ricoperta con 2 cucchiai di passata di pomodoro fresco, una mozzarella tagliata a cubetti e infine vengono aggiunti delle foglie di basilico e un filo d'olio EVO.
+            </br>La pizza viene infornata in forno a legna fino a cottura utlimata.
+          </p>
+        </div>
+      </section>
+      <section id="nutrients" class="container">
+        <h2 class="title">Tabella nutrizionale</h2>
+        <table id="values">
+                <thead>
+                <tr>
+                  <th>Valori Nutrizionali</th>
+                  <th>per 100g</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Energia</td>
+                  <td>254 Kcal</td>
+                </tr>
+                <tr>
+                  <td>Grassi</td>
+                  <td>11 g</td>
+                </tr>
+                <tr>
+                  <td>di cui saturi</td>
+                  <td>4,8 g</td>
+                </tr>
+                <tr>
+                  <td>Carboidrati</td>
+                  <td>31 g</td>
+                </tr>
+                <tr>
+                  <td>di cui zuccheri</td>
+                  <td>2,7 g</td>
+                </tr>
+                <tr>
+                  <td>Proteine</td>
+                  <td>7,4 g</td>
+                </tr>
+                </tbody>
+        </table>
 
-    <h2>Tabella nutrizionale</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Valori Nutrizionali</th>
-                <th>per 100g</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Energia</td>
-                <td>254 Kcal</td>
-            </tr>
-            <tr>
-                <td>Grassi</td>
-                <td>11 g</td>
-            </tr>
-            <tr>
-                <td>di cui saturi</td>
-                <td>4,8 g</td>
-            </tr>
-            <tr>
-                <td>Carboidrati</td>
-                <td>31 g</td>
-            </tr>
-            <tr>
-                <td>di cui zuccheri</td>
-                <td>2,7 g</td>
-            </tr>
-            <tr>
-                <td>Proteine</td>
-                <td>7,4 g</td>
-            </tr>
-        </tbody>
-    </table>
-    <a href="./the-net-pizza-html">Torna alla Home</a>
-</body>
+
+        <div class="container">
+          <section class="menu" id="menu" style="display: none;">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="title">I Nostri Consigliati</h2>
+                  <div id="recommended" class="row"></div>
+              </div>
+            </div>            
+          </section>    
+        </div>
+
+      <div class="container-fluid">
+        <div class="row"  >
+          <div class="col-2" id="home_button">
+            <a class="btn btn-light" href="../../index.html" role="button">Home</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container-fluid">
+      <div class="row">
+        <section class="opening-hours col-12 col-md-4">
+          <h2 class="footer-section-title text-center">Orari di Apertura</h2>
+          <table class="container-fluid text-center" id="orari">
+            <thead>
+              <tr>
+                <th>Giorno</th>
+                <th>Orario</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lunedì</td>
+                <td>Chiuso</td>
+              </tr>
+              <tr>
+                <td>Martedì</td>
+                <td>19:00 - 24:00</td>
+              </tr>
+              <tr>
+                <td>Mercoledì</td>
+                <td>19:00 - 24:00</td>
+              </tr>
+              <tr>
+                <td>Giovedì</td>
+                <td>19:00 - 24:00</td>
+              </tr>
+              <tr>
+                <td>Venerdì</td>
+                <td>19:00 - 24:00</td>
+              </tr>
+              <tr>
+                <td>Sabato</td>
+                <td>19:00 - 24:00</td>
+              </tr>
+              <tr>
+                <td>Domenica</td>
+                <td>19:00 - 24:00</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="where-we-are col-12  col-md-4">
+          <h2 class="footer-section-title text-center">Dove Siamo</h2>
+          <iframe width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=8.286395072937013%2C39.97725164260922%2C8.323259353637697%2C40.000563846393405&amp;layer=mapnik&amp;marker=39.988909359691846%2C8.304836049999949"
+            style="border: 1px solid black"></iframe>
+        </section>
+        <section class="where-we-are col-12  col-md-4">
+          <h2 class="footer-section-title text-center">Credits</h2>
+          Questo sito è realizzato dagli studenti della TNV Academy XI
+        </section>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+    src="./scripts/index.js"></script>
+  </body>
 </html>
-
-
-
-
-
