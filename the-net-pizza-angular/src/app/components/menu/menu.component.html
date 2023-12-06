@@ -1,13 +1,18 @@
 <div class="container">
-    <section class="menu">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="section-title">I Nostri Piatti</h2>
-                <div class="separator"></div>
-            </div>
-        </div>
+  <section class="menu">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">I Nostri Piatti</h2>
+        <div class="separator"></div>
+      </div>
+    </div>
 
-        <tnv-menu-section *ngFor="let piattiCategory of piattiCategories" [sectionMenuItems]="piattiCategory"
-            [sectionTitle]="piattiCategory[0]?.category || ''"></tnv-menu-section>
-    </section>
+    <tnv-menu-section
+      *ngFor="let piattiCategory of piattiCategories"
+      [sectionMenuItems]="piattiCategory"
+      [sectionTitle]="piattiCategory[0]?.category || ''"
+      (piattoSelected)="onPiattoSelected($event)"
+      (piattoDelete)="onPiattoDelete($event)"
+    ></tnv-menu-section>
+  </section>
 </div>

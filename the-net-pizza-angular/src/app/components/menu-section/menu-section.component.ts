@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MenuItemComponent } from '../menu-item/menu-item.component';
 import { Piatto } from '../../models/Piatto';
 
@@ -13,4 +13,16 @@ import { Piatto } from '../../models/Piatto';
 export class MenuSectionComponent {
   @Input() sectionTitle = '';
   @Input() sectionMenuItems: Piatto[] = [];
+
+  @Output() piattoSelected = new EventEmitter<string>();
+  @Output() piattoDelete = new EventEmitter<string>();
+
+  onPiattoSelected(piattoId: string) {
+    this.piattoSelected.emit(piattoId);
+  }
+
+  onPiattoDelete(piattoId: string) {
+    this.piattoDelete.emit(piattoId);
+  }
+
 }

@@ -1,9 +1,15 @@
-<div class="card shadow">
-    <img [src]="piatto.imageUrl" class="card-img-top" [alt]="piatto.title" />
-    <div class="card-body">
-        <h5 class="card-title"><a [routerLink]="['/menu', piatto.id]">{{ piatto.title | titlecase}}</a> - {{ piatto.price | currency:'€'}}</h5>
-        <p class="card-text">
-            {{ piatto.description }}
-        </p>
-    </div>
+<div class="card shadow" (click)="onClick(piatto.id)" [class.not-available]="!piatto.available">
+  <img [src]="piatto.imageUrl" class="card-img-top" [alt]="piatto.title" />
+  <div class="card-body">
+    <h5 class="card-title">
+      {{ piatto.title | titlecase }} 
+    </h5>
+    <p class="card-text">
+      {{ piatto.description }}
+    </p>
+    <a class="btn btn-danger" (click)="onPiattoDelete($event, piatto.id)"
+      >Delete</a
+    >
+  </div>
+  <div class="price">{{ piatto.price | currency : "€" }}</div>
 </div>

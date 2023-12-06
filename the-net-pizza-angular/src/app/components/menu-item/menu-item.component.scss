@@ -1,0 +1,17 @@
+div.card {
+    cursor: pointer;
+}
+
+.not-available {
+    opacity: 50%;
+    pointer-events: none;
+}
+
+div.price {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 4px;
+    background: white;
+    border-radius: 4px;
+}

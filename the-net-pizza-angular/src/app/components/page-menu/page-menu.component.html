@@ -1,1 +1,7 @@
-<tnv-menu [menu]="apiService.menu"></tnv-menu>
+<tnv-edit-piatto
+(addPiatto)="addPiatto($event)"></tnv-edit-piatto>
+<tnv-menu
+  [menu]="apiService.menu"
+  (piattoSelected)="navigateToDetailPage($event)"
+  (piattoDelete)="deletePiatto($event)"
+></tnv-menu>

@@ -20,3 +20,8 @@ interface NutritionalValues {
     sodium: string;
     protein: string;
 }
+
+export interface AddPiattoDTO {
+    message: string;
+    data: Piatto;
+}
