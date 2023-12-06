@@ -7,8 +7,7 @@
             </div>
         </div>
 
-        <tnv-menu-section [sectionMenuItems]="antipastiItems" sectionTitle="Antipasti"></tnv-menu-section>
-        <tnv-menu-section [sectionMenuItems]="primiItems" sectionTitle="Primi"></tnv-menu-section>
-        <tnv-menu-section [sectionMenuItems]="dolciItems" sectionTitle="Dolci"></tnv-menu-section>
+        <tnv-menu-section *ngFor="let piattiCategory of piattiCategories" [sectionMenuItems]="piattiCategory"
+            [sectionTitle]="piattiCategory[0]?.category || ''"></tnv-menu-section>
     </section>
 </div>

@@ -1,7 +1,7 @@
 <div class="card shadow">
     <img [src]="piatto.imageUrl" class="card-img-top" [alt]="piatto.title" />
     <div class="card-body">
-        <h5 class="card-title">{{ piatto.title | titlecase}} - {{ piatto.price | currency:'€'}}</h5>
+        <h5 class="card-title"><a [routerLink]="['/menu', piatto.id]">{{ piatto.title | titlecase}}</a> - {{ piatto.price | currency:'€'}}</h5>
         <p class="card-text">
             {{ piatto.description }}
         </p>
