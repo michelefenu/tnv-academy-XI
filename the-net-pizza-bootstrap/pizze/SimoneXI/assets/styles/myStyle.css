@@ -33,6 +33,7 @@ header {
     align-items:flex-start;
     justify-content:flex-start;
     text-shadow: 0 0 4px black;
+    
    
 }
 
@@ -45,11 +46,27 @@ header h1 {
     color: beige;
 }
 
+header a.scroll-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+#scopri{
+    font-family: 'Pacifico',cursive;
+    text-align:center;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0 0 4px black;
+   
+}
+
 .container {
     max-width: 1500px;
     margin: 0 auto;
     margin-top: 64px;
 }
+
 
 
 
@@ -68,6 +85,10 @@ section p{
     font-size: 2rem;
     color: white;
     text-shadow: 0 0 4px black;
+}
+
+.card shadow{
+    text-decoration:#730217;
 }
 
 .section-title {
