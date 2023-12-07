@@ -10,7 +10,8 @@
     <tnv-menu-section
       *ngFor="let piattiCategory of piattiCategories"
       [sectionMenuItems]="piattiCategory"
-      [sectionTitle]="piattiCategory[0]?.category || ''"
+      [sectionTitle]="piattiCategory[0].category || ''"
+      [isAdminMode]="isAdminMode"
       (piattoSelected)="onPiattoSelected($event)"
       (piattoDelete)="onPiattoDelete($event)"
     ></tnv-menu-section>

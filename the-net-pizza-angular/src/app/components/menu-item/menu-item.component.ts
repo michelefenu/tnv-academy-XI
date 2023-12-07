@@ -13,6 +13,7 @@ import { RouterModule } from '@angular/router';
 export class MenuItemComponent {
   //@Input() piatto: Piatto | null = null;
   @Input() piatto!: Piatto;
+  @Input() isAdminMode = false;
 
   @Output() piattoSelected = new EventEmitter<string>();
   @Output() piattoDelete = new EventEmitter<string>();

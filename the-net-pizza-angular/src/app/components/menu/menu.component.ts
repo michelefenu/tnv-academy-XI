@@ -12,7 +12,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './menu.component.scss'
 })
 export class MenuComponent implements OnChanges {
-  @Input() menu: Piatto[] = []
+  @Input() menu: Piatto[] = [];
+  @Input() isAdminMode = false;
   
   piattiCategories: Piatto[][] = [];
 

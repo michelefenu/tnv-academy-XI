@@ -4,16 +4,18 @@ import { ApiService } from '../../services/api.service';
 import { Router, RouterModule } from '@angular/router';
 import { EditPiattoComponent } from '../edit-piatto/edit-piatto.component';
 import { Piatto } from '../../models/Piatto';
+import { ConfigService } from '../../services/config.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'tnv-page-menu',
   standalone: true,
-  imports: [MenuComponent, EditPiattoComponent, RouterModule],
+  imports: [CommonModule, MenuComponent, EditPiattoComponent, RouterModule],
   templateUrl: './page-menu.component.html',
   styleUrl: './page-menu.component.scss'
 })
 export class PageMenuComponent {
-  constructor(public apiService: ApiService, private router: Router) {
+  constructor(public apiService: ApiService, public configService: ConfigService, private router: Router) {
     
   }
 

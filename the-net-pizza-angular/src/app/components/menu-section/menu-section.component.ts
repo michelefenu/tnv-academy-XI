@@ -13,6 +13,7 @@ import { Piatto } from '../../models/Piatto';
 export class MenuSectionComponent {
   @Input() sectionTitle = '';
   @Input() sectionMenuItems: Piatto[] = [];
+  @Input() isAdminMode = false;
 
   @Output() piattoSelected = new EventEmitter<string>();
   @Output() piattoDelete = new EventEmitter<string>();

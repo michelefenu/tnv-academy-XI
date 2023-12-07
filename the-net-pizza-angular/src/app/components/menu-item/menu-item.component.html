@@ -1,14 +1,23 @@
-<div class="card shadow" (click)="onClick(piatto.id)" [class.not-available]="!piatto.available">
+<div
+  class="card shadow"
+  (click)="onClick(piatto.id)"
+  [class.not-available]="!isAdminMode && !piatto.available"
+>
   <img [src]="piatto.imageUrl" class="card-img-top" [alt]="piatto.title" />
   <div class="card-body">
     <h5 class="card-title">
-      {{ piatto.title | titlecase }} 
+      {{ piatto.title | titlecase }}
     </h5>
     <p class="card-text">
       {{ piatto.description }}
     </p>
-    <a class="btn btn-danger" (click)="onPiattoDelete($event, piatto.id)"
-      >Delete</a
+    <ng-container *ngIf="isAdminMode">
+      <a class="btn btn-danger me-2" (click)="onPiattoDelete($event, piatto.id)"
+        >Delete</a
+      >
+      <a class="btn btn-warning" (click)="onPiattoDelete($event, piatto.id)"
+        >Edit</a
+      ></ng-container
     >
   </div>
   <div class="price">{{ piatto.price | currency : "€" }}</div>
