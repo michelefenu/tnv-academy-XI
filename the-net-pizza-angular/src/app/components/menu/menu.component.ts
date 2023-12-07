@@ -19,10 +19,10 @@ export class MenuComponent implements OnChanges {
 
   @Output() piattoSelected = new EventEmitter<string>();
   @Output() piattoDelete = new EventEmitter<string>();
+  @Output() piattoEdit = new EventEmitter<Piatto>();
 
 
   ngOnChanges() {
-    console.log('on changes')
     // 1 - capire quali categorie diverse ci sono
     const categories = [...new Set(this.menu.map(x => x.category))];
 
@@ -41,4 +41,9 @@ export class MenuComponent implements OnChanges {
   onPiattoDelete(piattoId: string) {
     this.piattoDelete.emit(piattoId);
   }
+
+  onPiattoEdit(piatto: Piatto) {
+    this.piattoEdit.emit(piatto);
+  }
+
 }

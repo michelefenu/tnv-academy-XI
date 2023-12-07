@@ -17,6 +17,7 @@ export class MenuSectionComponent {
 
   @Output() piattoSelected = new EventEmitter<string>();
   @Output() piattoDelete = new EventEmitter<string>();
+  @Output() piattoEdit = new EventEmitter<Piatto>();
 
   onPiattoSelected(piattoId: string) {
     this.piattoSelected.emit(piattoId);
@@ -24,6 +25,10 @@ export class MenuSectionComponent {
 
   onPiattoDelete(piattoId: string) {
     this.piattoDelete.emit(piattoId);
+  }
+
+  onPiattoEdit(piatto: Piatto) {
+    this.piattoEdit.emit(piatto);
   }
 
 }

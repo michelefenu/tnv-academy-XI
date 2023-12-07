@@ -1,10 +1,13 @@
 <tnv-edit-piatto
   *ngIf="configService.isAdminMode"
+  [piatto]="piattoToEdit"
   (addPiatto)="addPiatto($event)"
+  (editPiatto)="editPiatto($event)"
 ></tnv-edit-piatto>
 <tnv-menu
   [menu]="apiService.menu"
   [isAdminMode]="configService.isAdminMode"
   (piattoSelected)="navigateToDetailPage($event)"
   (piattoDelete)="deletePiatto($event)"
+  (piattoEdit)="setPiattoToEdit($event)"
 ></tnv-menu>

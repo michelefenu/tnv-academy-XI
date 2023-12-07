@@ -25,3 +25,8 @@ export interface AddPiattoDTO {
     message: string;
     data: Piatto;
 }
+
+export interface EditPiattoDTO {
+    message: string;
+    data: Piatto;
+}

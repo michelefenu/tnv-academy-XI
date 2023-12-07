@@ -1,18 +1,26 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Piatto } from '../../models/Piatto';
 import { FormsModule, NgForm } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'tnv-edit-piatto',
   standalone: true,
-  imports: [FormsModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './edit-piatto.component.html',
   styleUrl: './edit-piatto.component.scss'
 })
 export class EditPiattoComponent {
-  @Output() addPiatto = new EventEmitter<Piatto>();
+  @Input() piatto: Partial<Piatto> = {};
 
-  onAddPiatto(form: NgForm) {
-    this.addPiatto.emit(form.value);
+  @Output() addPiatto = new EventEmitter<Partial<Piatto>>();
+  @Output() editPiatto = new EventEmitter<Partial<Piatto>>();
+
+  onAddPiatto() {
+    this.addPiatto.emit(this.piatto);
+  }
+
+  onEditPiatto() {
+    this.editPiatto.emit(this.piatto);
   }
 }

@@ -15,6 +15,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './page-menu.component.scss'
 })
 export class PageMenuComponent {
+  piattoToEdit: Partial<Piatto> = {};
+
   constructor(public apiService: ApiService, public configService: ConfigService, private router: Router) {
     
   }
@@ -27,7 +29,15 @@ export class PageMenuComponent {
     this.apiService.deletePiatto(piattoId);
   }
 
-  addPiatto(piatto: Piatto) {
+  addPiatto(piatto: Partial<Piatto>) {
     this.apiService.addPiatto(piatto);
+  }
+
+  editPiatto(piatto: Partial<Piatto>) {
+    this.apiService.editPiatto(piatto);
+  }
+
+  setPiattoToEdit(piatto: Piatto) {
+    this.piattoToEdit = {...piatto};
   }
 }
